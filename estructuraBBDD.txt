@@ -1,0 +1,9 @@
+Coleccion Usuarios{
+    email
+    nombre
+}
+
+Coleccion Insultos{
+    verbo
+    sustantivo
+}

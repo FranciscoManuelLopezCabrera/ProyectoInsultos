@@ -1,0 +1,30 @@
+{
+  "name": "proyectoinsultos",
+  "version": "1.0.0",
+  "description": "Crear una API que te genere un insulto aleatorio a través de una serie de palabras preestablecidas insertadas en una BBDD. También tendrá la funcionalidad de registrar un correo electrónico en la BBDD para que el cliente reciba un insulto en el intervalo que él quiera.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoManuelLopezCabrera/ProyectoInsultos.git"
+  },
+  "author": "paquito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoManuelLopezCabrera/ProyectoInsultos/issues"
+  },
+  "homepage": "https://github.com/FranciscoManuelLopezCabrera/ProyectoInsultos#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "docker-compose": "^0.23.19",
+    "eslint": "^8.34.0",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "winston": "^3.8.2"
+  }
+}
