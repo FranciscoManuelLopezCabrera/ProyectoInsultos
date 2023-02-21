@@ -2,7 +2,7 @@
   "name": "proyectoinsultos",
   "version": "1.0.0",
   "description": "Crear una API que te genere un insulto aleatorio a través de una serie de palabras preestablecidas insertadas en una BBDD. También tendrá la funcionalidad de registrar un correo electrónico en la BBDD para que el cliente reciba un insulto en el intervalo que él quiera.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon"
@@ -27,6 +27,8 @@
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.1",
     "nodemon": "^2.0.20",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^4.6.1",
     "winston": "^3.8.2"
   }
 }

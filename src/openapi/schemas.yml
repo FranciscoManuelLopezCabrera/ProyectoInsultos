@@ -1,0 +1,11 @@
+User:
+    type: Object
+    properties;:
+      email: String
+      pass: String
+
+Slur:
+    type: Object
+    properties:
+      verbo: String
+      sustantivo: String
