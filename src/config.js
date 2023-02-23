@@ -10,7 +10,8 @@ const db = {
 };
 
 const mongodb={
-  uri: `mongodb${db.atlas}://${db.host}/${db.name}?retryWrites=true&w=majority`,
+  // uri: `mongodb${db.atlas}://${db.host}/${db.name}?retryWrites=true&w=majority`,
+  uri: `mongodb+srv://${db.user}:${db.pass}@${db.host}/?retryWrites=true&w=majority`,
   options: {
     user: db.user,
     pass: db.pass,
@@ -19,11 +20,20 @@ const mongodb={
   },
 };
 
+const smtp = {
+  user: process.env.SMTP_USER,
+  password: process.env.SMTP_PASSWORD,
+  clientSecret: process.env.GMAIL_CLIENT_SECRET,
+  clientId: process.env.GMAIL_CLIENT_ID,
+  accessToken: process.env.GMAIL_ACCESS_TOKEN,
+  authUrl: 'https://developers.google.com/oauthplayground',
+};
+
 const config = {
   app: {
     port: process.env.PORT,
   },
-  mongodb
+  mongodb, smtp
 };
 
 module.exports = config;

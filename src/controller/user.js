@@ -1,8 +1,14 @@
-const userServices = require ('../services/mongodbServices/user');
+const userService = require('../services/mongodbServices/user');
+const Users = require("../models/user");
 
-//CREATE USER
-function createUser(){
-    const createdUser = userServices.createUser();
+// CREAR USUARIOS
+async function createUser(req, res, next) {
+  try {
+    const createdUser = await userService.createUser(req.body);
+    res.status(201).send(createdUser);
+  } catch (error) {
+    next(error);
+  }
 }
 
-//
+module.exports={createUser};
