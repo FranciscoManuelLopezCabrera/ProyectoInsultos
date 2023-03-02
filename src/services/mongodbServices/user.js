@@ -1,4 +1,4 @@
-const { User }= require('../../models');
+const { User } = require("../../models");
 
 // CREAR USUARIO
 async function createUser(body) {
@@ -9,10 +9,18 @@ async function createUser(body) {
 // ELIMINAR USUARIO
 async function deleteUser(email) {
   const filter = { email };
-    const deletedUser = await User.deleteOne(filter);
-    return deletedUser;
+  const deletedUser = await User.deleteOne(filter);
+  return deletedUser;
 }
 
 // MODIFICAR USUARIO
+async function updateUser(email, newData) {
+  const filter = { email };
+  const updatedUser = await User.findOneAndUpdate(filter, newData, {
+    new: true,
+  });
+  return updatedUser;
+}
 
-module.exports={createUser, deleteUser};
+// EXPORTS
+module.exports = { createUser, deleteUser, updateUser };

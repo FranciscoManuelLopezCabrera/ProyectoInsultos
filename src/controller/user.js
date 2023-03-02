@@ -19,10 +19,15 @@ async function deleteUser(req, res) {
 }
 
 // MODIFICAR USUARIO
-
-
-
-
+async function updateUser(req, res, next) {
+  try {
+    const { email } = req.params;
+    const updatedUser = await userService.updateUser(email, req.body);
+    res.status(200).send(updatedUser);
+  } catch (error) {
+    next(error);
+  }
+}
 
 // EXPORTS
-module.exports = { createUser, deleteUser };
+module.exports = { createUser, deleteUser, updateUser };
