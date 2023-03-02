@@ -7,3 +7,12 @@ Coleccion Insultos{
     verbo
     sustantivo
 }
+
+
+separa insultos en dos colecciones 3
+
+hacer smtp 2
+
+arreglar swagger 1
+
+middleware de seguridad palabra secreta 4

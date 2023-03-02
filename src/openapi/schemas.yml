@@ -1,11 +1,26 @@
 User:
-    type: Object
-    properties;:
-      email: String
-      pass: String
-
-Slur:
-    type: Object
-    properties:
-      verbo: String
-      sustantivo: String
+  type: object
+  properties:
+    name:
+      type: string
+    email:
+      type: string
+PostUser:
+  type: object
+  properties:
+    email:
+      type: string
+PutUser:
+  type: object
+  properties:
+    name:
+      type: string
+    email:
+      type: string
+DeleteUser:
+  type: object
+  properties:
+    name:
+      type: string
+    email:
+      type: string

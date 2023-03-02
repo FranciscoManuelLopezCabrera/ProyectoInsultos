@@ -7,5 +7,5 @@ const { logger } = require("./utils");
 const { port } = config.app;
 
 app.listen(port, () => {
-  logger.info(`Escuchando en: ${port}`);
+  logger.info(`👂Escuchando en: ${port}`);
 });

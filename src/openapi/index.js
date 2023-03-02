@@ -1,21 +1,20 @@
-const fs = require("fs");
-const path = require("path");
-const yaml = require("js-yaml");
+const fs = require('fs');
+const path = require('path');
+const yaml = require('js-yaml');
 
-const pathFile = path.resolve(__dirname, "paths.yml");
-const schemasFile = path.resolve(__dirname, "schemas.yml");
-const pathD = yaml.load(fs.readFileSync(pathFile, "utf8"));
-const schemas = yaml.load(fs.readFileSync(schemasFile, "utf8"));
+const pathFile = path.resolve(__dirname, 'paths.yml');
+const schemasFile = path.resolve(__dirname, 'schemas.yml');
+const pathD = yaml.load(fs.readFileSync(pathFile, 'utf8'));
+const schemas = yaml.load(fs.readFileSync(schemasFile, 'utf8'));
 
 module.exports = {
-  openapi: "3.0.3",
+  openapi: '3.0.3',
   info: {
-    version: "0.0.1",
-    title: "Prueba",
-    description: "Proyecto",
-    termsOfService: "http://swagger.io/terms/",
+    version: '0.0.1',
+    title: 'Llorería',
+    description: 'API que te insulta 👺',
   },
-  servers: [{ url: "http://localhost:3000/" }],
+  servers: [{ url: 'http://localhost:3000/' }],
   paths: pathD,
   components: {
     schemas,

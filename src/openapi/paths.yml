@@ -1,0 +1,65 @@
+  "/users":
+    post:
+      tags:
+      - usuario
+      summary: Crear usuario
+      description: Creación de un usuario
+      requestBody:
+        description: Creación de usuario
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        201:
+          description: Usuario listo para sollozar!
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostUser"
+  "/users/":
+    put:
+      tags:
+      - usuario
+      summary: Editar email de un usuario
+      description: Edita el email del usuario
+      parameters:
+      - name: name
+        in: path
+        description: Nombre del usuario que deseas modificar
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Lo que quieres editar del usuario
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PutUser"
+      responses:
+        201:
+          description: Usuario modificado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+    delete:
+      tags:
+      - usuario
+      summary: Eliminar usuario por su identificador
+      description: Eliminar el usuario que quieras
+      parameters:
+      - name: id
+        in: path
+        description: Identificador del usuario que deseas eliminar
+        required: true
+        schema:
+          type: number
+      responses:
+        201:
+          description: Usuario borrado correctamente !
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DeleteUsuario"
+  
