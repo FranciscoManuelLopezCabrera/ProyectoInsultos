@@ -6,4 +6,13 @@ async function createUser(body) {
   return createdUser;
 }
 
-module.exports={createUser};
+// ELIMINAR USUARIO
+async function deleteUser(email) {
+  const filter = { email };
+    const deletedUser = await User.deleteOne(filter);
+    return deletedUser;
+}
+
+// MODIFICAR USUARIO
+
+module.exports={createUser, deleteUser};

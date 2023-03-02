@@ -1,4 +1,4 @@
-const userService = require('../services/mongodbServices/user');
+const userService = require("../services/mongodbServices/user");
 const Users = require("../models/user");
 
 // CREAR USUARIOS
@@ -11,4 +11,18 @@ async function createUser(req, res, next) {
   }
 }
 
-module.exports={createUser};
+// BORRAR USUARIO
+async function deleteUser(req, res) {
+  const { email } = req.params;
+  const deletedUser = await userService.deleteUser(email);
+  res.status(201).send(deletedUser);
+}
+
+// MODIFICAR USUARIO
+
+
+
+
+
+// EXPORTS
+module.exports = { createUser, deleteUser };
