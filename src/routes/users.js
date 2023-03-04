@@ -1,8 +1,4 @@
-const {
-  createUser,
-  deleteUser,
-  updateUser,
-} = require("../controller/user");
+const { createUser, deleteUser, updateUser } = require("../controller/user");
 
 const { Router } = require("express");
 

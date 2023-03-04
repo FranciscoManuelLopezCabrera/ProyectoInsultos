@@ -26,7 +26,7 @@
       parameters:
       - name: email
         in: path
-        description: Nombre del usuario que deseas modificar
+        description: Email del usuario que deseas modificar
         required: true
         schema:
           type: string
@@ -62,4 +62,23 @@
             application/json:
               schema:
                 $ref: "#/components/schemas/DeleteUser"
+  "/slur":
+    post:
+      tags:
+      - insulto
+      summary: Crear insulto
+      description: Creación de un insulto
+      requestBody:
+        description: Creación de insulto
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Slur"
+      responses:
+        201:
+          description: Insulto listo para ofender!
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostSlur"
   

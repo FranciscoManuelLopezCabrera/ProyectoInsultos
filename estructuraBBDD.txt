@@ -1,18 +1,7 @@
-Coleccion Usuarios{
-    email
-    nombre
-}
+1 arreglar swagger 1 OK
 
-Coleccion Insultos{
-    verbo
-    sustantivo
-}
+2 hacer smtp 2
 
+3 separa insultos en dos colecciones 3 
 
-separa insultos en dos colecciones 3 
-
-hacer smtp 2
-
-arreglar swagger 1 OK
-
-middleware de seguridad palabra secreta 4
+4 middleware de seguridad palabra secreta 4

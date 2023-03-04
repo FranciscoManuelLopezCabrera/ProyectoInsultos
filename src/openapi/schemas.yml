@@ -20,3 +20,15 @@ DeleteUser:
   properties:
     email:
       type: string
+Slur:
+  type: object
+  properties:
+    verbo:
+      type: string
+    sustantivo:
+      type: string
+PostSlur:
+  type: object
+  properties:
+    insulto:
+      type: string
