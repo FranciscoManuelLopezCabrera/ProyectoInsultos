@@ -1,23 +1,12 @@
 require('dotenv').config();
 
-const db = {
-  host: process.env.DATABASE_HOST,
-  port: process.env.DATABASE_PORT,
-  name: process.env.DATABASE_NAME,
-  user: process.env.DATABASE_USER,
-  pass: process.env.DATABASE_PASS,
-  atlas: process.env.NODE_ENV === 'production' ? '+srv' : '',
-};
 
 const mongodb={
-  // uri: `mongodb${db.atlas}://${db.host}/${db.name}?retryWrites=true&w=majority`,
-  uri: `mongodb+srv://${db.user}:${db.pass}@${db.host}/?retryWrites=true&w=majority`,
-  options: {
-    user: db.user,
-    pass: db.pass,
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  },
+    user: process.env.DATABASE_USER , 
+    pass: process.env.DATABASE_PASS,
+    host: process.env.DATABASE_HOST,
+    port: process.env.DATABASE_PORT,
+    dbName: process.env.DATABASE_NAME,
 };
 
 const smtp = {
