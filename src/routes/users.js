@@ -10,8 +10,8 @@ const router = Router();
 
 router.post("", createUser);
 
-router.delete("/:email", deleteUser);
-
 router.put("/:email", updateUser);
+
+router.delete("/:email", deleteUser);
 
 module.exports = router;

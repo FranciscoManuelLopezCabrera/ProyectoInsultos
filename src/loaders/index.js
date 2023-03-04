@@ -7,7 +7,6 @@ function init(app, config) {
   //smtpLoader(config.smtp);
   mongodbLoader(config.mongodb);
 }
-
 module.exports = {
   init,
 };
