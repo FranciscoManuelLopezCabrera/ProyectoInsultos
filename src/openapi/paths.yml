@@ -24,7 +24,7 @@
       summary: Editar email de un usuario
       description: Edita el email del usuario
       parameters:
-      - name: name
+      - name: email
         in: path
         description: Nombre del usuario que deseas modificar
         required: true
@@ -46,12 +46,12 @@
     delete:
       tags:
       - usuario
-      summary: Eliminar usuario por su identificador
+      summary: Eliminar usuario por su email
       description: Eliminar el usuario que quieras
       parameters:
       - name: email
         in: path
-        description: Identificador del usuario que deseas eliminar
+        description: Email del usuario que deseas eliminar
         required: true
         schema:
           type: string
@@ -61,5 +61,5 @@
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/DeleteUsuario"
+                $ref: "#/components/schemas/DeleteUser"
   

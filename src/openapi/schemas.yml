@@ -13,14 +13,10 @@ PostUser:
 PutUser:
   type: object
   properties:
-    name:
-      type: string
     email:
       type: string
 DeleteUser:
   type: object
   properties:
-    name:
-      type: string
     email:
       type: string
