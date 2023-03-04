@@ -9,7 +9,7 @@ async function createUser(body) {
 // ELIMINAR USUARIO
 async function deleteUser(email) {
   const filter = { email };
-  const deletedUser = await User.deleteOne(filter);
+  const deletedUser = await User.remove(filter);
   return deletedUser;
 }
 
