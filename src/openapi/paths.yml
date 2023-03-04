@@ -17,7 +17,7 @@
             application/json:
               schema:
                 $ref: "#/components/schemas/PostUser"
-  "/users/":
+  "/users/{email}":
     put:
       tags:
       - usuario
