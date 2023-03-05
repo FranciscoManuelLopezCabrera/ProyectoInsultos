@@ -62,23 +62,43 @@
             application/json:
               schema:
                 $ref: "#/components/schemas/DeleteUser"
-  "/slur":
+  "/verbos":
     post:
       tags:
-      - insulto
-      summary: Crear insulto
-      description: Creación de un insulto
+      - verbo
+      summary: Crear verbo
+      description: Creación de un verbo
       requestBody:
-        description: Creación de insulto
+        description: Creación de verbo
         content:
           application/json:
             schema:
               $ref: "#/components/schemas/Slur"
       responses:
         201:
-          description: Insulto listo para ofender!
+          description: Verbo listo para ofender!
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/PostSlur"
+  "/sustantivos":
+    post:
+      tags:
+      - sustantivo
+      summary: Crear sustantivo
+      description: Creación de un sustantivo
+      requestBody:
+        description: Creación de sustantivo
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Slur"
+      responses:
+        201:
+          description: Sustantivo listo para ofender!
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostSlur"
+                
   

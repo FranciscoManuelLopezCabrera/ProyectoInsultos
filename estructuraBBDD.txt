@@ -1,7 +1,0 @@
-1 arreglar swagger 1 OK
-
-2 hacer smtp 2
-
-3 separa insultos en dos colecciones 3 
-
-4 middleware de seguridad palabra secreta 4

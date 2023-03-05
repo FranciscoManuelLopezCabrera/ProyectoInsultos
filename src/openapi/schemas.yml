@@ -23,12 +23,10 @@ DeleteUser:
 Slur:
   type: object
   properties:
-    verbo:
-      type: string
-    sustantivo:
+    palabra:
       type: string
 PostSlur:
   type: object
   properties:
-    insulto:
+    palabra:
       type: string

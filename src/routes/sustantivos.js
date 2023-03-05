@@ -1,13 +1,9 @@
-const { createSlurSus, createSlurVb } = require("../controller/slur");
+const { createSlurSus } = require("../controller/sustantivo");
 
 const { Router } = require("express");
 
 const router = Router();
 
-/*
-router.post("", createSlurVb);
-
 router.post("", createSlurSus);
-*/
 
 module.exports = router;
