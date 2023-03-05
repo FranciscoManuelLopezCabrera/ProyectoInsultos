@@ -1,5 +1,4 @@
-const slurService = require("../services/mongodbServices/slur");
-const Slur = require("../models/slur");
+const slurService = require("../services/mongodbServices/verbo");
 
 // CREAR INSULTO SUSTANTIVO
 async function createSlurVb(req, res, next) {
@@ -12,5 +11,4 @@ async function createSlurVb(req, res, next) {
 }
 
 // EXPORTS
-
 module.exports = { createSlurVb };

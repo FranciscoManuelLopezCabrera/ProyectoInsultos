@@ -1,7 +1,11 @@
-const User = require('./user');
-const Slur = require('./slur');
+const User = require("./user");
+const Verbo = require("./verbo");
+const Sustantivo = require("./sustantivo");
+const Slur = require("./slur");
 
 module.exports = {
-    User,
-    Slur
-}
+  User,
+  Slur,
+  Verbo,
+  Sustantivo,
+};

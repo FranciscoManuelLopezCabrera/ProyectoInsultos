@@ -1,3 +1,3 @@
-const smtpLoader = require('../services/smtp-service');
+const smtpLoader = require("../services/smtp-service");
 
-module.exports = config => smtpLoader.setConfig(config);
+module.exports = (config) => smtpLoader.setConfig(config);
