@@ -31,12 +31,12 @@ PostSlur:
     palabra:
       type: string
 Email:
-  type: object
+  type: none
   properties:
     email:
-      type: string
+      type: none
 PostEmail:
-  type: object
+  type: none
   properties:
     email:
-      type: string
+      type: none

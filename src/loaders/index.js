@@ -4,7 +4,7 @@ const mongodbLoader = require("./mongodb");
 
 function init(app, config) {
   expressLoader(app);
-  //smtpLoader(config.smtp);
+  smtpLoader(config.smtp);
   mongodbLoader(config.mongodb);
 }
 module.exports = {

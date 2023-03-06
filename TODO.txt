@@ -1,6 +1,6 @@
 1 arreglar swagger OK
 
-2 hacer smtp
+2 hacer smtp OK
 
 3 separa insultos en dos colecciones OK
 

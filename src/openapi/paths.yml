@@ -100,22 +100,9 @@
             application/json:
               schema:
                 $ref: "#/components/schemas/PostSlur"
-  "/email":
+  "/correos":
     post:
       tags:
-      - email
+      - correo
       summary: Enviar insulto
-      description: Creación de un email
-      requestBody:
-        description: Creación de un email
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/Email"
-      responses:
-        201:
-          description: En breve el cliente estará llorando!
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/PostEmail"
+      description: Enviar insulto aleatorio
