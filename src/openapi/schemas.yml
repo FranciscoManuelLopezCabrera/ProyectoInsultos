@@ -30,3 +30,13 @@ PostSlur:
   properties:
     palabra:
       type: string
+Email:
+  type: object
+  properties:
+    email:
+      type: string
+PostEmail:
+  type: object
+  properties:
+    email:
+      type: string

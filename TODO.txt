@@ -2,6 +2,8 @@
 
 2 hacer smtp
 
-3 separa insultos en dos colecciones
+3 separa insultos en dos colecciones OK
 
 4 middleware de seguridad palabra secreta
+
+Comando para testear mailhog: Send-MailMessage -To "test@mailhog.local" -From "paquito@gmail.com" -Subject "Hola Mundo!" -SmtpServer "localhost" -Port 1025

@@ -1,5 +1,3 @@
-/*
-
 const nodemailer = require("nodemailer");
 
 // create reusable transporter object using the default SMTP transport
@@ -28,10 +26,3 @@ transporter.sendMail(mailOptions, function (error, info) {
     console.log("Email sent: " + info.response);
   }
 });
-
-module.exports = {
-  setConfig,
-  sendMail,
-};
-
-*/
