@@ -21,13 +21,15 @@ function setConfig(smtpConfig) {
     auth: {
       type: "OAuth2",
       user: "francislocabrera@gmail.com",
+      //TOKEN ACCESO, HAY QUE REFRESCARLO
       accessToken:
-        "ya29.a0AVvZVsp4ILYFheOJvXVJ0qaVsoi9YoddgOVNbxvIBLkFB-_4jez6akhXza1Tt_5FEJN5-FK3BJ7YFW4BFLepkra7SEy5sF_b_Vkot81RtohQyS5XhGC-5a9zsTMromxA_TVqSB450gU23hV5vFDU8MLsqFZdaCgYKAWISARASFQGbdwaIbgxTKDWFawZX7T2YkhhgDQ0163",
+        "ya29.a0AVvZVsoy9k2o2sVgTbzoalefpjXnMpcEWDGHW_qsxMpv7WI8DIyLqhcL1_6as213bcCHLzq33ehLzzNwTKhzBhDtBHmO0mX3khw8BizTYQycwApx4_TEIswgLdjY-Da9lX4LyF5XecQN4AaZxzjpv1VDjT5REXgaCgYKAVYSARASFQGbdwaIVAI_gz5KaGKtW5WeLzIwpg0166",
       clientId:
         "377203487212-gfcg8k75h89fvrigc7fio5obml6dr6a0.apps.googleusercontent.com",
       clientSecret: "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",
+      // TOKEN DE REFRESH, HAY QUE REFRESCARLO
       refreshToken:
-        "1//04dgrUcFpw1GwCgYIARAAGAQSNwF-L9IrRDmu1uQR3KfM3KAMrnj2kLvcutHNsH3CXvusq3ux38WboN9qWnJLGBqeqoEXFqGkd8g",
+        "1//04m_MTSdzb6eJCgYIARAAGAQSNwF-L9IrCiKRbAQVXVD3hya5KccZTQDpcrQ_2u0rojn6wygYW7oJ_s8yMPcM2iJ5OfAxaqSDJN0",
     },
   });
 }
@@ -54,7 +56,7 @@ async function sendMail(content) {
     text,
   });
 
-  logger.info(`Message sent: ${info.messageId}`);
+  logger.info(`Insulto enviado: ${info.messageId}`);
 
   return info;
 }
